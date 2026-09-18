@@ -18,11 +18,12 @@ fun AppNavigation(){
     ) {
         composable ("home") {
             // Abrir tela principal
-            TelaPrincipal()
+            TelaPrincipal(navController)
         }
 
         composable ("segundaTela") {
             // Abrir a segunda tela
+            SegundaTela(navController)
         }
     }
 }
