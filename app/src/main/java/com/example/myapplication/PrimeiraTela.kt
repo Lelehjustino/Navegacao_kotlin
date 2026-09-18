@@ -18,17 +18,18 @@ fun PreviewTelaPrincipal(){
 fun TelaPrincipal(navController: NavController){
     Column() {
         Text(
-            ""
+            "Navegar segunda tela"
         )
         Text(
-            ""
+            "Navegar segunda tela"
         )
         Text(
-            ""
+            "Navegar segunda tela"
         )
         Text(
-            ""
+            "Navegar segunda tela"
         )
+
         Button(
             onClick = {
                 navController.navigate("segundaTela")
