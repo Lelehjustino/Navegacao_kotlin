@@ -1,9 +1,12 @@
 package com.example.myapplication
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
@@ -16,28 +19,22 @@ fun PreviewTelaPrincipal(){
 
 @Composable
 fun TelaPrincipal(navController: NavController){
-    Column() {
-        Text(
-            "Navegar segunda tela"
-        )
-        Text(
-            "Navegar segunda tela"
-        )
-        Text(
-            "Navegar segunda tela"
-        )
-        Text(
-            "Navegar segunda tela"
-        )
+    Scaffold(
 
-        Button(
-            onClick = {
-                navController.navigate("segundaTela")
-            }
+    ) {
+        Column(
+            modifier = Modifier.padding(it)
         ) {
-            Text(
-                "Navegar segunda tela"
-            )
+
+            Button(
+                onClick = {
+                    navController.navigate("segundaTela")
+                }
+            ) {
+                Text(
+                    "Navegar segunda tela"
+                )
+            }
         }
     }
 }
